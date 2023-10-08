@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 
 const userRoutes = require('./routes/userRoutes');
-
+const postRoutes = require("./routes/postRoutes");
 
 dotenv.config();
 
@@ -18,7 +18,8 @@ app.use(cookieParser());
 app.use(cors());
 
 // Routes
-app.use("/api/users", userRoutes)
+app.use("/api/users", userRoutes);
+app.use("/api/posts", postRoutes);
 
 const port = process.env.PORT || 8888;
 
