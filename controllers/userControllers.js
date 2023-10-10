@@ -157,9 +157,5 @@ const profileUser = async (req, res) => {
     }
 };
 
-//Get post
-const postUser = async (req, res) => {
 
-}
-
-module.exports = { postUser, signupUser, logininUser, logoutUser, followunfollowUser, updateUser, profileUser };
+module.exports = { signupUser, logininUser, logoutUser, followunfollowUser, updateUser, profileUser };
